@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Page</title>
-    <link rel="stylesheet" href="/Archive/style.css">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/4b36c17d8c.js" crossorigin="anonymous"></script>
+    <script src="/Archive/script.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,41 +20,42 @@
             height: 100vh;
         }
 
-        .register-container {
+        .login-container {
             background-color: #fff;
             padding: 40px;
             border-radius: 25px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             max-width: 500px;
             width: 100%;
-            transform: translate(100%, 14%);
+            transform: translate(100%, 20%);
+
         }
 
-        .register-container h2 {
+        .login-container h2 {
             text-align: center;
             color: #333;
         }
 
-        .register-form {
+        .login-form {
             margin-top: 20px;
         }
 
-        .register-form label {
+        .login-form label {
             display: block;
             margin-bottom: 8px;
             color: #555;
         }
 
-        .register-form input {
+        .login-form input {
             width: 100%;
-            padding: 10px;
+            padding: 20px;
             margin-bottom: 15px;
             border: 1px solid #ddd;
             border-radius: 4px;
             box-sizing: border-box;
         }
 
-        .register-form button {
+        .login-form button {
             background-color: #000;
             color: #fff;
             padding: 10px 50px;
@@ -63,8 +65,22 @@
             font-size: 16px;
         }
 
-        .register-form button:hover {
+        .login-form button:hover {
             background-color: #258cd1;
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .forgot-password a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
         }
 
         .login-link {
@@ -84,62 +100,56 @@
 </head>
 
 <body>
-   <div class="header">
-    <nav id="navBar">
-        <div class="divv">
-            <a href="/htmls/landing.html"><img src="/imgs/home-svgrepo-com.svg" class="logo"></a>
-            <a href="/htmls/landing.html"><p>My-Locale</p></a>
-        </div>
-            <ul class="nav-links">
-                <li><a href="listing.html" class="active">Popular Houses</a></li>
-                <li><a href="listing.html">Properties</a></li>
-                <li><a href="listing.html">View Homes</a></li>
-            </ul>
-            <a href="/Archive/register.html" class="register-btn">Register Now</a>
-            <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
-        </nav>
-    <div class="register-container">
-        
-        <h2>Register</h2>
-        <form class="register-form" onsubmit="return registerUser()">
+    <div class="header">
+        <nav id="navBar">
+            <div class="divv">
+                <a href="/htmls/landing.html"><img src="/imgs/home-svgrepo-com.svg" class="logo"></a>
+                <a href="/htmls/landing.html"><p>My-Locale</p></a>
+            </div>
+                <ul class="nav-links">
+                    <li><a href="listing.html" class="active">Popular Houses</a></li>
+                    <li><a href="listing.html">Properties</a></li>
+                    <li><a href="listing.html">View Homes</a></li>
+                </ul>
+                <a href="/Archive/register.html" class="register-btn">Register Now</a>
+                <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+            </nav>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form class="login-form" onsubmit="return authenticateUser()">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
 
-            <label for="confirmPassword">Confirm Password:</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required>
-
-            <button type="submit">Register</button>
+            <button type="submit">Login</button>
         </form>
 
-        <div class="login-link">
-            <p>Already have an account? <a href="/Archive/signin.html">Login here</a>.</p>
+        <div class="forgot-password">
+            <a href="/Archive/frgtpwd.html">Forgot Password?</a>
         </div>
 
         <div class="login-link">
             <p>Back to <a href="/Archive/index.html">Homepage</a>.</p>
         </div>
     </div>
-    </div> 
+    </div>
 
     <script>
-        function registerUser() {
+        // Simulating a simple authentication process
+        function authenticateUser() {
             var username = document.getElementById("username").value;
-            var email = document.getElementById("email").value;
             var password = document.getElementById("password").value;
-            var confirmPassword = document.getElementById("confirmPassword").value;
 
-            if (password !== confirmPassword) {
-                alert("Passwords do not match. Please try again.");
-                return false;
-            } else {
-                alert("Registration successful!");
+            // Add your authentication logic here (e.g., check against a predefined username and password)
+            if (username === "demo" && password === "password") {
+                alert("Login successful!");
+                // Redirect to another page or perform other actions after successful login
                 return true;
+            } else {
+                alert("Invalid username or password. Please try again.");
+                return false;
             }
         }
     </script>

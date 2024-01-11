@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House Details Page</title>
-    <link rel="stylesheet" href="/Archive/style.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/4b36c17d8c.js" crossorigin="anonymous"></script>
-
     <script>
         var navBar = document.getElementById("navBar");
 
@@ -29,6 +28,7 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
+
 </head>
 <body>
     <nav id="navBar" class="navbar-white">
@@ -51,7 +51,7 @@
     </nav>
     <div class="house-details">
         <div class="house-title">
-            <h1>2 bedroom duplex</h1>
+            <h1>6 bedroom block of flats for sale</h1>
             <div class="row">
                 <div>
                     <i class="fa-solid fa-star"></i>
@@ -59,7 +59,7 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star-half-stroke"></i>
                     <i class="fa-regular fa-star"></i>
-                    <span>28 Reviews</span>
+                    <span>64 Reviews</span>
                 </div>
                 <div>
                     <p>Location: Barnawa, Kaduna, Nigeria</p>
@@ -68,28 +68,28 @@
         </div>
         <div class="gallery">
           <div class="gallery-img-1"><img src="/imgs/images/parlour7.jpg"></div>
-          <div><img src="/imgs/images/tvv7.webp"></div>
+          <div><img src="/imgs/images/tvv10.jpg"></div>
           <div><img src="/imgs/images/room2.jpg"></div>
           <div><img src="/imgs/images/room2.jpg"></div>
           <div><img src="/imgs/images/room2.jpg"></div>
         </div>
         <div class="small-details">
             <h2>Entire sales unit hosted by My-Locale</h2>
-            <p>2 Bedroom &nbsp; &nbsp; 1 Kitchen &nbsp; &nbsp; 2 bathroom</p>
-            <h4>N 40,000,000</h4>
+            <p>6 Bedrooms &nbsp; &nbsp; 6 bathrooms &nbsp; &nbsp; 6 toilets &nbsp; &nbsp; 6 parking spaces &nbsp; &nbsp; 648 sqm total area</p>
+            <h4>N 250,000,000</h4>
         </div>
         <hr class="line">
         <form class="check-form">
             <div class="guest-field">
-                <label>2 bedroom duplex</label>
-                <input type="text" placeholder="3 Inhabitant">
+                <label>6 bedroom flat</label>
+                <input type="text" placeholder="6 Inhabitant">
             </div>
             <button type="submit">Check Availability</button>
         </form>
 
         <ul class="details-list">
             <li><i class="fa-solid fa-house"></i>Entire Home
-                <span>2 bedroom (2 Rooms and Parlour).</span>
+                <span>6 bedroom flat (6 Rooms and 2 parlours).</span>
             </li>
             <li><i class="fa-solid fa-paintbrush"></i>Enhanced Assistance
                 <span>This agent has committed time to my-locale's inhabitant assistance.</span>
@@ -103,12 +103,15 @@
         </ul>
         <hr class="line">
 
+
         <div class="tab-titles">
             <p class="tab-links active-link" onclick="opentab('details')">Details</p>
             <p class="tab-links" onclick="opentab('map')">Map</p>
             <p class="tab-links" onclick="opentab('area-guide')">Area Guide</p>
         </div>
         <div class="tab-contents active-tab" id="details">
+
+
             <p class="home-desc"><b>Important Information</b><br>
                 Be wary of any agent asking you to pay a viewing fee of more than ₦10,000. They may not be genuine and need to be reported to us. 
                 <br> 
@@ -124,7 +127,6 @@
                 <br>For further Enquiry and Inspection
                 <hr class="line">
             </div>
-
         <div class="tab-contents" id="map">
 
             <div class="map">
@@ -133,20 +135,19 @@
                 <b>Barnawa, Kaduna, Nigeria</b>
             </div>
             <hr class="line">
-            </div>
-
-            <style>
-                .lightbulb i{
-                    display: flex;
-                    flex-direction: row;
-                }
-            </style>
-                           <div class="tab-contents" id="area-guide">
+        </div>
+        <style>
+            .lightbulb i{
+                display: flex;
+                flex-direction: row;
+            }
+        </style>
+                         <div class="tab-contents" id="area-guide">
                             <div class="lightbulb">
                                 <i class="fa fa-lightbulb-o" aria-hidden="true"> &nbsp; <h2>Interesting Facts</h2></i>
                             </div>
-                    <p>The Kaduna Museum holds a collection of ancient artifacts.
-                        <br>Visitors can explore the museum’s impressive collection, which includes ancient pottery, sculptures, and historical artifacts.
+                    <p>The Kaduna Polo Club is one of the oldest polo clubs in Nigeria.
+                        <br>Polo enthusiasts can witness thrilling matches and admire the skilled horsemanship at this prestigious club.
         
                        
                         <br>
@@ -190,12 +191,12 @@
                                 <br>Kaduna has places like Ahmadu Bello Stadium, a multipurpose stadium in Kaduna city that hosts various sports and cultural events. 
         
                             </p>
-                        </div>  
-    
-                <hr class="line">
-            </div>
+                        </div> 
+
+            <hr class="line">
+        </div>
             <div class="host">
-                <img src="/imgs/images/face4.jpg">
+                <img src="/imgs/images/face8.jpg">
                 <div>
                     <h2>My-Locale's Agent</h2>
                     <p><span>
@@ -204,7 +205,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i>
-                    </span>&nbsp; &nbsp; 28 reviews &nbsp; &nbsp; Response rate 100% &nbsp; &nbsp; Response time: 60 min </p>
+                    </span>&nbsp; &nbsp; 64 reviews &nbsp; &nbsp; Response rate 100% &nbsp; &nbsp; Response time: 60 min </p>
                 </div>
             </div>
             <a href="#" class="contact-host">Contact Agent</a>
@@ -227,3 +228,5 @@
 </script>
 </body>
 </html>
+
+<!-- hi -->
