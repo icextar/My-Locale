@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Lora:ital@1&family=Raleway:wght@100;200;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    width: 80%;
+    padding-left: 150px;
+    padding-right: 90px;
+    background-color: #F8FAEB;
+}
+.header{
+    height: 10vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #F8FAEB;
+    gap:1rem;
+}   
+.navbar a{
+    color: rgb(18, 17, 17);
+    font-size: 27px;
+    margin-left: 00px;
+    cursor: pointer;
+    text-decoration: none;
+    
+    font-family: 'Lucida Grande', Verdana, sans-serif;
+
+}
+.div{
+    background-color: rgb(167, 112, 220);
+    height: 150px;
+    border-radius: 10px;
+}
+.imgh img{
+    border-radius: 50%;
+      overflow: hidden;
+      width: 200px;
+      height: 200px;
+      margin-top: -70px;
+}
+.imgh {
+    display: flex;
+    flex-direction: column;
+
+}
+.imgh p{
+    margin-left: 220px;
+    margin-top: -110px;
+    font-weight: 600;
+
+}
+.imgh h4{
+    margin-left: 220px;
+    font-weight: 100;
+}
+.imgh h3{
+    margin-left: 1146px;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 13px;
+    margin-top: -35px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    background-color: #222020;
+}
+
+.body{
+    padding:  10px;
+    margin-top: 120px;
+    width: 500px;
+    background-color: darkcyan;
+}
+.body h3{
+    color: #fff;
+    
+    font-size: 16px;
+}
+ .sub-b{
+    background-color: rgb(28, 80, 80);
+    margin-left: 710px;
+    margin-top: -39px;
+    padding: 10px;
+    font-size: 19px;
+    color: #fff;
+
+    width: 500px;
+}
+.sub-cc{
+    color: #000000;
+    width: 499px;
+    height: 350px;
+    margin-top: -2.5px;
+    border: 1px solid #a29a9a;
+    padding: 10px;
+}
+.body-c{
+    margin-top: -370px;
+    width: 498px;
+    padding: 10px;
+    height: 210px;
+    margin-left: 710px;
+    border: 1px solid #a29a9a;
+}
+.blw{
+    width: 70px;
+    background-color: #a29a9a;
+    height: 30px;
+
+}
+i{
+    margin-left: 1146px;
+    font-family: 'Lucida Grande', Verdana, sans-serif;
+    background-color: #24d5d2;
+    margin-top: 115px;
+}
+

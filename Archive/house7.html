@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Details Page</title>
+    <link rel="stylesheet" href="/Archive/style.css">
+    <script src="https://kit.fontawesome.com/4b36c17d8c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4b36c17d8c.js" crossorigin="anonymous"></script>
+    <script>
+        var navBar = document.getElementById("navBar");
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu");
+        }
+
+        // Tabs javascript
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</head>
+<body>
+    <nav id="navBar" class="navbar-white">
+        <div class="divv">
+            <a href="/Archive/index.html"><img src="/imgs/home-svgrepo-com.svg" class="logo"></a>
+            <a href="/Archive/index.html"><p>My-Locale</p></a>
+        </div>  
+<style>
+        .divv a p{
+            color: black;
+        }
+        </style>
+            <ul class="nav-links">
+                <li><a href="/Archive/listing.html" class="active">Popular Places</a></li>
+                <li><a href="/Archive/listing.html">Travel Outside</a></li>
+                <li><a href="/Archive/listing.html">Online Packages</a></li>
+        </ul>
+        <a href="/Archive/register.html" class="register-btn">Register Now</a>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+    </nav>
+    <div class="house-details">
+        <div class="house-title">
+            <h1>3 bedroom detached duplex with swimming pool</h1>
+            <div class="row">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>33 Reviews</span>
+                </div>
+                <div>
+                    <p>Location: Barnawa, Kaduna, Nigeria</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+          <div class="gallery-img-1"><img src="/imgs/images/parlour7.jpg"></div>
+          <div><img src="/imgs/images/tvv8.webp"></div>
+          <div><img src="/imgs/images/room2.jpg"></div>
+          <div><img src="/imgs/images/room2.jpg"></div>
+          <div><img src="/imgs/images/room2.jpg"></div>
+        </div>
+        <div class="small-details">
+            <h2>Entire sales unit hosted by My-Locale</h2>
+            <p>3 Bedroom &nbsp; &nbsp; 3 bathrooms &nbsp; &nbsp; 3 toilets</p>
+            <h4>N 75,000,000</h4>
+        </div>
+        <hr class="line">
+        <form class="check-form">
+            <div class="guest-field">
+                <label>3 bedroom duplex</label>
+                <input type="text" placeholder="4 Inhabitant">
+            </div>
+            <button type="submit">Check Availability</button>
+        </form>
+
+        <ul class="details-list">
+            <li><i class="fa-solid fa-house"></i>Entire Home
+                <span>3 bedrooms (3 Room and 2 Parlour).</span>
+            </li>
+            <li><i class="fa-solid fa-paintbrush"></i>Enhanced Assistance
+                <span>This agent has committed time to my-locale's inhabitant assistance.</span>
+            </li>
+            <li><i class="fa-solid fa-location-dot"></i>Great Location
+                <span>90% of recent inhabitants gave the location a 5 star rating.</span>
+            </li>
+            <li><i class="fa-solid fa-heart"></i>Great environment
+                <span>100% of recent inhabitants gave the environment a 5 star rating.</span>
+            </li>
+        </ul>
+        <hr class="line">
+
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('details')">Details</p>
+            <p class="tab-links" onclick="opentab('map')">Map</p>
+            <p class="tab-links" onclick="opentab('area-guide')">Area Guide</p>
+        </div>
+        <div class="tab-contents active-tab" id="details">
+
+
+            <p class="home-desc"><b>Important Information</b><br>
+                Be wary of any agent asking you to pay a viewing fee of more than ₦10,000. They may not be genuine and need to be reported to us. 
+                <br> 
+                <br>Be particularly wary of any agent claiming to work under the name <b>Winners Property</b> and asking you to pay a refundable inspection and consultancy fee.
+                <br>
+                <br>Price: 15m (Slightly Negotiable)
+                <br>
+                <br>NB: 5% Consultation Agency fee applies
+                
+                <br>
+                <br>Please call: 08135478782
+                <br>
+                <br>For further Enquiry and Inspection
+                <hr class="line">
+            </div>
+        <div class="tab-contents" id="map">
+
+            <div class="map">
+                <h3>Location on map</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15691.634604610887!2d7.428940698986183!3d10.507860933999158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104d355834371775%3A0x480195979abfe174!2sKaduna%20800283%2C%20Kaduna!5e0!3m2!1sen!2sng!4v1701856729135!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <b>Barnawa, Kaduna, Nigeria</b>
+            </div>
+            <hr class="line">
+        </div>
+
+        <style>
+            .lightbulb i{
+                display: flex;
+                flex-direction: row;
+            }
+        </style>
+                        <div class="tab-contents" id="area-guide">
+                            <div class="lightbulb">
+                                <i class="fa fa-lightbulb-o" aria-hidden="true"> &nbsp; <h2>Interesting Facts</h2></i>
+                            </div>
+                    <p>The Kaduna Film Village is a popular destination for filmmakers.
+                        <br>Film producers and directors flock to the Kaduna Film Village to take advantage of its diverse landscapes and unique architectural structures for their movie productions.
+        
+                       
+                        <br>
+                        <div class="lightbulb">
+                            <i class="fa fa-spa" aria-hidden="true">&nbsp; <h2>Leisure and Shopping</h2></i>
+                            <p>
+                                Barnawa has all the amenities its inhabitants need, 
+                                so they never have to leave their comfort zone. 
+                                <br>Green Suite Villa and Epitome Hotel Suites are nearby hotels. 
+                                <br>Market Square and Godek pharmacy has all your normal and hard-to-find groceries.
+        
+                            </p>
+                        </div>   
+                        <br>
+                        
+                        <div class="lightbulb">
+                            <i class="fa fa-graduation-cap" aria-hidden="true">&nbsp; <h2>Schools</h2></i>
+                            <p>
+                                Danbo International Schools, Jinie Schools and Queens Field Schools are nearby schools.
+        
+                            </p>
+                        </div> 
+                        <br>
+    
+                        <div class="lightbulb">
+                            <i class="fa fa-cloud-moon" aria-hidden="true">&nbsp; <h2>Night Life</h2></i>
+                            <p>
+                                Nightlife in Barnawa comes alive with top nightclubs like 
+                                <br>Vault Lounge, Jodeci Lounge,and The Empire Lounge among others
+        
+                            </p>
+                        </div> 
+                        <br>
+    
+        
+                        <div class="lightbulb">
+                            <i class="fa fa-sun" aria-hidden="true">&nbsp; <h2>Day Life</h2></i>
+                            <p>
+                                Barnawa is an area always bustling with activities at any time of the day. 
+                                <br>One does not have to travel far into Kaduna North to unwind as they are all available in Barnawa. 
+                                <br>Kaduna has places like Ahmadu Bello Stadium, a multipurpose stadium in Kaduna city that hosts various sports and cultural events. 
+        
+                            </p>
+                        </div> 
+
+            <hr class="line">
+        </div>
+
+            <div class="host">
+                <img src="/imgs/images/face6.jpg">
+                <div>
+                    <h2>My-Locale's Agent</h2>
+                    <p><span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </span>&nbsp; &nbsp; 33 reviews &nbsp; &nbsp; Response rate 100% &nbsp; &nbsp; Response time: 60 min </p>
+                </div>
+            </div>
+            <a href="#" class="contact-host">Contact Agent</a>
+    </div>
+    <div class="container-house">
+    <a href="https://facebook.com"><i class="fa-brands fa-facebook" style="color: #246ef0;"></i></a>
+    <a href="https://youtube.com"><i class="fa-brands fa-youtube" style="color: #ff0909;"></i></a>
+    <a href="https://twitter.com"><i class="fa-brands fa-twitter" style="color: #4b81e0;"></i></a>
+    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in" style="color: #264780;"></i></a>
+    <a href="https://instagram.com"><i class="fa-brands fa-instagram" style="color: #ca2222;"></i></a>
+    <hr>
+    <p>Copyright © 2023, All Rights Reserved.</p>
+    </div>
+</div>
+<script>
+    var navBar = document.getElementById("navBar");
+    function togglebtn(){
+        navBar.classList.toggle("hidemenu");
+    }
+</script>
+</body>
+</html>

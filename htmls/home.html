@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Locale</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+
+    
+
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="../imgs/house-svgrepo-com.svg" class="img" alt="">
+            <p>My-Locale</p>
+        </a>
+
+        <nav class="navbar">
+            <a href="#home.html" class="homes" onclick="window.location = '#traction'">Home</a>
+            <a href="/htmls/sign-in.html">Log In</a>
+            <a href="/htmls/login.html">Sign Up</a>
+        <a href="#second">ed</a>
+        </nav>
+        
+
+        <div class="icons">
+            <div class="search" id="search-btn"></div>
+        </div>
+
+
+        <div class="search-form">
+            <label for="search-box" class="fas fa-search"></label>
+            <input type="search" id="search-box" placeholder="search ....">
+        </div>
+
+    </header>
+
+    <div class="home_i" id="home">
+            <div class="content"><h3>Discover Your Next Investment</h3>
+                <p>Expert estate services to help you find the right investment opportunity </p>
+                <a href="#" class="btn">Start Investing</a>
+            </div>
+
+     </div>
+
+    <div class="secondSection">
+            <div class="secondSectionText">
+                    <h6>Welcome to my My-Locale</h6>
+            </div>
+            <section aria-label="Newest Photos">
+                <div class="carousel" data-carousel>
+                  <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                  <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                  <ul data-slides>
+                    <li class="slide" data-active>
+                      <img src="/imgs/images/high-angle-view-houses-town-against-sky_1048944-1727064.jpg" alt="Nature Image #1">
+                    </li>
+                    <li class="slide">
+                      <img src="/imgs/images/houses-by-street-against-sky-city_1048944-1727582.jpg" alt="Nature Image #3">
+                    </li>
+                  </ul>
+                </div>
+              </section>
+    </div>
+
+
+
+    <div class="secondSection">
+        <div class="secondSectionText">
+            <h6 id="second">My-Locale Collection of beautiful Properties</h6>
+        </div>
+        <div class="wrapper">
+            <div class="card">
+                <div class="poster"><img src="/imgs/images/photo-1572120360610-d971b9d7767c.webp" alt="2"></div>
+            </div>
+            <div class="card">
+                <div class="poster"><img src="/imgs/images/photo-1416331108676-a22ccb276e35.webp" alt="3"></div>
+            </div>
+            <div class="card">
+                <div class="poster"><img src="/imgs/images/photo-1559329145-afaf18e3f349.webp" alt="1"></div>
+            </div>
+            <div class="card">
+                <div class="poster"><img src="/imgs/images/photo-1558308508-4e7a8fdff9c0.webp" alt="1"></div>
+            </div>
+            <div class="card">
+                <div class="poster"><img src="/imgs/images/photo-1522050212171-61b01dd24579.webp" alt="1"></div>
+            </div>
+            <div class="card">
+                <div class="poster"><img src="/imgs/images/photo-1628744448838-c04e09b1ba03.webp" alt="1"></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="head-1">
+        <div class="header-content-1">
+            <div class="hhead">
+              <p class="pi">CONTACT</p> 
+              <img class="img-c" src="/imgs/contact-svgrepo-com.svg">
+              <p><b>Drop us a line!</b></p>
+                <div class="search-bar-1">
+                    <input type="text" id="search-input-3" onkeyup="myFunction()" placeholder="Name">
+                    <div class="search-bar-2"></div>
+                      <br><input type="text" id="search-input-2" onkeyup="myFunction()" placeholder="Email*">
+                    </div>
+                    <div class="search-bar-3"></div>
+                      <br><input type="text" id="search-input-1" onkeyup="myFunction()" placeholder="Message">
+                    </div>
+                  <div class="signup">
+                    <br><button class="sign-in-1"><b>SEND</b></button>
+                    <p><br><b>Better yet, see us in person</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer"></footer>
+    <script>
+        var popup = window.open(
+        "login.html",
+        "dialog",
+        {
+        width: 400,
+        height: 300,
+        resizable: false,
+        scrollbars: "yes"
+        });
+        popup.focus();
+    </script>
+
+<script src="/js/home.js"></script>
+</body>
+</html>
